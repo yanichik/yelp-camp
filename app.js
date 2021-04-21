@@ -34,6 +34,7 @@ const helmet = require('helmet');
 const MongoStore = require('connect-mongo');
 
 // const dbURL = process.env.ATLAS_URL;
+// const dbURL = 'mongodb://localhost:27017/yelp-camp';
 const dbURL = process.env.ATLAS_URL || 'mongodb://localhost:27017/yelp-camp';
 mongoose.connect(dbURL, {
 	useNewUrlParser: true,
